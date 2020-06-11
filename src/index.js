@@ -5,8 +5,8 @@
 function createElement(tagName, props, ...children) {
   const element = document.createElement(tagName);
 
-  Object.entries(props || {}).forEach(([key, valueue]) => {
-    element[key.toLowerCase()] = valueue;
+  Object.entries(props || {}).forEach(([key, value]) => {
+    element[key.toLowerCase()] = value;
   });
 
   children.flat().forEach((child) => {
